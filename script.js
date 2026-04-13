@@ -42,9 +42,6 @@ d3.json("data.json").then(function(data) {
       .attr("cx", d => d.x)
       .attr("cy", d => d.y);
   });
-
-});
-
 // Basal D3 force graf
 const width = 900;
 const height = 600;
@@ -153,4 +150,5 @@ node.on("click", (event, clickedNode) => {
   link.attr("opacity", d =>
     d.source.id === clickedNode.id || d.target.id === clickedNode.id ? 1 : 0.1
   );
+});
 });
