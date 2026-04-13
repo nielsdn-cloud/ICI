@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    { "id": "C5", "type": "lvl_1" },
+    { "id": "C6", "type": "lvl_1" },
+    { "id": "C7", "type": "lvl_1" },
+
+    { "id": "Lateral cord", "type": "lvl_2" },
+    { "id": "Posterior cord", "type": "lvl_2" },
+
+    { "id": "Musculocutaneous nerve", "type": "lvl_3" },
+    { "id": "Radial nerve", "type": "lvl_3" },
+
+    { "id": "Lateral antebrachial cutaneous nerve", "type": "lvl_4" }
+  ],
+
+  "links": [
+    { "source": "C5", "target": "Lateral cord" },
+    { "source": "C6", "target": "Lateral cord" },
+    { "source": "C7", "target": "Posterior cord" },
+
+    { "source": "Lateral cord", "target": "Musculocutaneous nerve" },
+    { "source": "Posterior cord", "target": "Radial nerve" },
+
+    { "source": "Musculocutaneous nerve", "target": "Lateral antebrachial cutaneous nerve" }
+  ]
+}
